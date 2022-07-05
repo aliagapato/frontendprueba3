@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+  <head>
+    <!-- Profesor: Claudio Fuenzalida Medina -->
+    <!-- Alumno #1: Susana Ramirez Sandrock  -->
+    <!-- Alumno #1: Patricio Aliaga Retamal  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sitio web comercial de la automotora Super Duper Cars">
+    <link rel="icon" type="image/x-icon" href="../img/brand/favicon.ico">
+    <title>SuperDuperCars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/app.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    
+    <div class="container">
+      
+      <div class="row my-3">
+        <div class="col-12">
+          <header class="py-3 border rounded-3 d-flex flex-wrap justify-content-center bg-light">
+            <a href="/" class="d-flex align-items-center mx-3 mb-md-0 me-md-auto col-xs-12">
+              <img src="https://lh3.googleusercontent.com/5f9fsNiJ0UgQab5swMsd-lz1Jr-4QHKqveN87vH_x-oF5gSBR8HYwopNY6RuY4BciHQa4U1JDs_PEsOCzwkNE-6MsnM14T6l89oeLO_41r0ZlSSnupqpV9_zV0UIIic4mHpwNa9vE8tm_EyEgMOpxZKyayleFoHSFSU5wIkOLyjYiATNi1ptPCbM1MtBHsBp9ePAXtDJnhaMuhWjHm-FEwIGXXKiIq2ZXyQLYjgUx8L7hBYUV6XP6_B9-e2sJ5BT28OQw4c0aeTP-5UJFZGoT9t2qtr0iS0h8Y4VVv_micYhuSoHZE9U0l7hOyBjXghdueHXiZQBtYRVElpac3M62FrW9kop6lblq78lh39EWUcKgu3xFdB7HuHuVMQZaXzqrEVUEhmIKDBdtuN5VMUo5OtdTwZh6mJ3sqwHvoQrvv4g8Yc0mT9fc95-ctqGjro138ogBMxLKP1roFN98y2IfBGa4dWkxTMV1poRGLmZ59v-VQV0SGE6wc2oMJHWPUsPMu23EbXuN3d9-4R0FNTYtpmS5TLCIOt-PciXrZDXhoAKrjV4AQjamPbHVfRGGavYNa3CYhgJeqG6bDkW9xiY4Dxx6WXnKRRz76zC345AieCtLcNWxHUmE1oyoKPGjljbnw3Vt_m-aOBMx2RVD1odTU6JNJ_IU9IK0HrdG_ORbvRn6oHm0vBUnHrPfBIlIeXH68J_StVOBugnXHqCo-NKjOrKs5L8SfnbqwHY55ZOleR6GCsvo_eNN093e3pueEtIwP56H1MYPM_tXvbyvnaGiSo55x7Q83Na=w300-h102-no?authuser=0" alt="Imagen para el logo">
+            </a>
+            <ul class="mx-3 mt-3 py-3 nav nav-pills">
+              <li class="nav-item"><a href="/" class="btn btn-ligth" aria-current="page">INICIO</a></li>
+              <li class="nav-item"><a href="equipo.html" class="btn btn-ligth" aria-current="page">EQUIPO</a></li>
+              <li class="nav-item"><a href="galeria.html" class="btn btn-ligth" aria-current="page">GALERIA</a></li>
+              <li class="nav-item"><a href="mision.html" class="btn btn-ligth" aria-current="page">MISION</a></li>
+              <li class="nav-item"><a href="contacto.html" class="btn btn-secondary">CONTACTO</a></li>
+            </ul>
+          </header>
+        </div>
+      </div>
+    
+      <div class="row my-3">
+        <div class="mt-3 mb-3 col-xs-12 col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <h2 class="mb-3">Hablemos</h2>
+            <div class="col-12">
+              <form>
+
+                <h6 class="mb-3">Como quieres que te llamemos</h6>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nombre" placeholder="Dejanos tu nombre: Juan Perez" name="nombre" required onkeyup="app.validarNombre();">
+                  <label for="nombre">Dejanos tu nombre: Juan Perez</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="rut" placeholder="Dejanos tu nombre: Juan Perez" name="rut" required onkeyup="app.validarRut();">
+                  <label for="rut">Cual es su RUT: 11222333-6</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="telefono" placeholder="Dejanos tu nombre: Juan Perez" name="telefono" required onkeyup="app.validarTelefono();">
+                  <label for="telefono">Cual es su telefono celular: 987654321</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="Cual es su correo: micorreo@gmail.com" name="email" required onkeyup="app.validarEmail();">
+                  <label for="email">Cual es su correo: micorreo@gmail.com</label>
+                </div>
+                
+                <h6 class="mb-3">Motivo de contacto</h6>
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input id="motivoConsulta" name="motivo" type="radio" class="form-check-input" value="Consulta" checked>
+                    <label class="form-check-label" for="motivoConsulta">Consulta</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input id="motivoFelicitaciones" name="motivo" type="radio" class="form-check-input" value="Felicitaciones">
+                    <label class="form-check-label" for="motivoFelicitaciones">Felicitaciones</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input id="motivoReclamo" name="motivo" type="radio" class="form-check-input" value="Reclamo">
+                    <label class="form-check-label" for="motivoReclamo">Reclamo</label>
+                  </div>            
+                </div>
+
+                <h6 class="mb-3">Sucursal</h6>
+                <div class="mb-3">
+                  <select class="form-select" id="sucursal">
+                    <option value="default" selected>Seleccionar sucursal</option>
+                    <option value="Puente Alto">Puente Alto</option>
+                    <option value="La Florida">La Florida</option>
+                    <option value="San Miguel">San Miguel</option>
+                  </select>
+                </div>
+                
+                <h6 class="mb-3">Modelo involucrado</h6>
+                <div class="mb-3">
+                  <select class="form-select" id="modelo">
+                    <option value="default" selected>Seleccionar modelo</option>
+                    <option value="Lamborghini SC20">Lamborghini SC20</option>
+                    <option value="Maserati MC20">Maserati MC20</option>
+                    <option value="Ferrari Portofino">Ferrari Portofino</option>
+                  </select>
+                </div>
+                
+                <h6 class="mb-3">Mensaje</h6>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="mensaje" placeholder="Deja aqui tu mensaje: 'La atención es la mejor del mundo mundial!'" name="mensaje" required onkeyup="app.validarMensaje();"></textarea>
+                  <label for="mensaje">Deja aqui tu mensaje: 'La atención es la mejor del mundo mundial!'</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <button id="reset" class="w-100 btn btn-secondary btn-lg" type="reset" onclick="app.limpiarFormulario()">Reiniciar valores</button>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <button id="enviar" class="w-100 btn btn-primary btn-lg" type="submit" onclick="app.validarFormulario()">Enviar mensaje</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 mb-3 col-xs-12 col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.292190092561!2d-70.5138269!3d-33.363437000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cbe8bb48c04f%3A0x2b86708cd3bf61e6!2sAv.%20La%20Dehesa%20265%2C%20Lo%20Barnechea%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1650168271127!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+          
+      <footer class="row my-3">
+        <div class="col-xs-12 col-md-4 mb-3">
+          <iframe width="100%" class="h-100" src="https://www.youtube.com/embed/33crJ6BiJ20?controls=0&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-xs-12 col-md-4 mb-3">
+          <iframe width="100%" class="h-100" src="https://www.youtube.com/embed/WmCYy6655XI?controls=0&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-xs-12 col-md-4 mb-3">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <h5>Acerca de nosotros</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="contacto.html" class="p-0">Avda. La Dehesa 265, Lo Barnechea, Santiago.</a></li>
+              <li class="nav-item mb-2"><a href="tel:+56987654321">+56 9 8765 4321</a></li>
+              <li class="nav-item mb-2"><a href="mailto:contacto@spc.com" class="p-0">contacto@spc.com</a></li>
+              <li class="nav-item mb-2"><a href="contacto.html" class="p-0">Dejanos un mensaje</a></li>
+              <li class="nav-item mb-2"><a href="/" class="p-0">Ir al inicio</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </footer>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Mensaje enviado!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="cuerpoDetalleModal">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Genial!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  
+</html>
